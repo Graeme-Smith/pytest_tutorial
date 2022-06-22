@@ -32,11 +32,11 @@ Open the file pytest_tutorial.py.  In the bottom right hand corner VS Code will 
 
 Click it and a list of available Environments will display. Choose the one that has the name of your project, pytest_tutorial, in it:
 
-## Integrate pytest with 
+## Integrate pytest with VS Code
 
-Open the *tests* folder amd open `test_pytest_tutorial.py` 
+Open the `tests` folder amd open `test_pytest_tutorial.py` 
 
-This test import the \__version__ variable from the \__init__.py file that is inside thepytest_tutorial folder and asserts that the current version is 0.1.0.
+This test imports the \__version__ variable from the \__init__.py file that is inside the pytest_tutorial folder and asserts that the current version is 0.1.0.
 
 In the integrated terminal run pytest from the commandline:
 
@@ -50,7 +50,19 @@ We will want to integrate pytest with VS code. Open your Command Palette with `s
 - Select pytest.
 - Choose the directory in which the tests are stored, tests in our case.
 
-A new Testing icon resembling a conical flask appears at the left bar. If you click on it a panel displaying all the tests will appear. Here, you can run each one individually.
+A new Testing icon resembling a conical flask appears at the left bar. If you click on it a panel displaying all the tests will appear. Here, you can run each one individually, or all the tests simultaneously.
+
+## Examining a failing test
+
+In `test_pytest_tutorial.py` change the version in the assert to 0.1.1,save the change, and run pytest again.
+
+Revert the version checked back to 0.1.0 and ensure that the test now passes.
+
+## Calculating test coverage using coverage.py
+
+```bash
+poetry run coverage run -m pytest && poetry run coverage report -m
+```
 
 ## License
 [MIT](https://choosealicense.com/licenses/mit/)
