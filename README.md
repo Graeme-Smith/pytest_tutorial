@@ -13,6 +13,8 @@ First download the github repo [pytest_tutorial](https://github.com/Graeme-Smith
 git clone git@github.com:Graeme-Smith/pytest_tutorial.git
 ```
 
+Open the folder `pytest_tutorial`, you've created, in VS code `ctrl + o`.  Open a new terminal in VS code `ctrl + shift + \``   
+
 The repo has all its virtual environment and python dependencies managed by poetry.  Install poetry if you do not already have it installed:
 
 ```bash
@@ -30,13 +32,19 @@ poetry install
 
 Open the file pytest_tutorial.py.  In the bottom right hand corner VS Code will display the current Python Environment.
 
+![Screenshot of taskbar](task_bar.png)
+
 Click it and a list of available Environments will display. Choose the one that has the name of your project, pytest_tutorial, in it:
+
+![Select interpreter](select_interpreter.png)
 
 ## Integrate pytest with VS Code
 
-Open the `tests` folder amd open `test_pytest_tutorial.py` 
+Open the `tests` folder and open `test_pytest_tutorial.py` 
 
 This test imports the \__version__ variable from the \__init__.py file that is inside the pytest_tutorial folder and asserts that the current version is 0.1.0.
+
+![Screenshot of test suite](Screenshot_test.png)
 
 In the integrated terminal run pytest from the commandline:
 
