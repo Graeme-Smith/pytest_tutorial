@@ -36,7 +36,7 @@ Open the file pytest_tutorial.py.  In the bottom right hand corner VS Code will 
 
 Click it and a list of available Environments will display. Choose the one that has the name of your project, pytest_tutorial, in it:
 
-![Select interpreter](select_interpreter.png)
+![Select interpreter](select_interpreter_cropped.png)
 
 ## Integrate pytest with VS Code
 
