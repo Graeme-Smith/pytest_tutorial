@@ -1,5 +1,6 @@
 from pytest_tutorial import __version__
-from pytest_tutorial import *
+
+from pytest_tutorial.pytest_tutorial import is_miscall
 
 
 def test_version():
@@ -7,4 +8,9 @@ def test_version():
 
 
 def test_is_miscall_AA_AA_AB():
-    assert is_miscall("AA", "AA", "BB") == True
+    answer = is_miscall(
+        "AA",
+        "AA",
+        "BB",
+    )
+    assert answer is True

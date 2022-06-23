@@ -2,10 +2,13 @@ def is_miscall(father, mother, child):
     """
     QC to identify miscalls
 
-    This function takes three strings as args representing a haplotype for a trio of samples (father, mother, and child).
+    This function takes three strings as args representing a haplotype for a trio of
+    samples (father, mother, and child).
     The haplotypes can be "AA", "BB", or "AB".
-    The function checks the parents haplotype and if the childs haplotype does not correspond reports it as a Miscall.
-    For example, parents with aHaplotpe "AA" and "AA" cannot have a child with haplotype "BB".  This would suggest a technical issue with this result.
+    The function checks the parents haplotype and if the childs haplotype does no
+    correspond reports it as a Miscall.
+    For example, parents with aHaplotpe "AA" and "AA" cannot have a child with
+    haplotype "BB".  This would suggest a technical issue with this result.
     """
     is_miscall = False
 
